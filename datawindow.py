@@ -1,5 +1,3 @@
-
-
 class DataWindow:
     def __init__(self, windowSize):
         self.data = []

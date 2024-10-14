@@ -5,7 +5,7 @@ def grayscale(pixels):
     for x in range(0, len(pixels), 4):
         value = (pixels[x] * 0.299) + (pixels[x + 1]
                                        * 0.587) + (pixels[x + 2] * 0.114)
-        gray.append(value)
+        gray.append(int(value))
     return gray
 
 
