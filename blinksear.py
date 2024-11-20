@@ -1,6 +1,6 @@
 import numpy as np
 
-EAR_THRESHOLD = [0.15, 0.2, 0.23, 0.25, 0.27, 0.3, 0.4]
+EAR_THRESHOLD = [0.15, 0.2, 0.22, 0.23, 0.25, 0.27, 0.3, 0.4]
 
 
 def getEucledianDistance(x1, y1, x2, y2):
