@@ -7,8 +7,8 @@ class Correlation:
         self.blinkWindow = 8
         self.equalizeStep = 5
         self.threshold = 80
-        self.minCorrelation = [0.78, 0.8, 0.7, 0.6, 0.6, 0.7]
-        self.maxCorrelation = [0.85, 0.9, 0.8, 0.7, 0.8, 0.9]
+        self.minCorrelation = [0.65, 0.7, 0.71, 0.71, 0.73, 0.68]
+        self.maxCorrelation = [0.85, 0.8, 0.81, 0.79, 0.77, 0.82]
         self.blinkData = dw.DataWindow(self.blinkWindow)
 
     def isBlinkByCorrelation(self, left, right):

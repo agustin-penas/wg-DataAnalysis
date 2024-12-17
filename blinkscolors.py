@@ -7,8 +7,8 @@ class Colors:
         self.blinkWindow = 8
         self.equalizeStep = 5
         self.threshold = 80
-        self.minCorrelation = [0.78, 0.8, 0.7, 0.6, 0.6, 0.7]
-        self.maxCorrelation = [0.85, 0.9, 0.8, 0.7, 0.8, 0.9]
+        self.minCorrelation = [0.55, 0.6, 0.61, 0.61, 0.63, 0.58]
+        self.maxCorrelation = [0.75, 0.7, 0.71, 0.69, 0.67, 0.72]
         self.blinkData = dw.DataWindow(self.blinkWindow)
 
     def isBlinkByColors(self, left, right):
