@@ -1,6 +1,10 @@
 import numpy as np
 
-EAR_THRESHOLD = [0.29, 0.31, 0.33, 0.34, 0.36, 0.37, 0.39, 0.4]
+EAR_THRESHOLD = [0.15, 0.2, 0.22, 0.23, 0.25, 0.265, 0.27, 0.285,
+                 0.29, 0.3, 0.31, 0.33, 0.34, 0.35, 0.36, 0.37, 0.39, 0.4]
+
+EAR_THRESHOLD1 = [0.15, 0.2, 0.22, 0.23, 0.25, 0.265, 0.27, 0.285, 0.29]
+EAR_THRESHOLD2 = [0.3, 0.31, 0.33, 0.34, 0.35, 0.36, 0.37, 0.39, 0.4]
 
 
 def getEucledianDistance(x1, y1, x2, y2):
@@ -23,6 +27,18 @@ def isBlinkByEar(rightEyeTopArc, rightEyeBottomArc, leftEyeTopArc, leftEyeBottom
     rightEar = getEAR(rightEyeTopArc, rightEyeBottomArc)
     leftEar = getEAR(leftEyeTopArc, leftEyeBottomArc)
     return list(map(lambda x: rightEar < x or leftEar < x, EAR_THRESHOLD))
+
+
+def isBlinkByEar1(rightEyeTopArc, rightEyeBottomArc, leftEyeTopArc, leftEyeBottomArc):
+    rightEar = getEAR(rightEyeTopArc, rightEyeBottomArc)
+    leftEar = getEAR(leftEyeTopArc, leftEyeBottomArc)
+    return list(map(lambda x: rightEar < x or leftEar < x, EAR_THRESHOLD1))
+
+
+def isBlinkByEar2(rightEyeTopArc, rightEyeBottomArc, leftEyeTopArc, leftEyeBottomArc):
+    rightEar = getEAR(rightEyeTopArc, rightEyeBottomArc)
+    leftEar = getEAR(leftEyeTopArc, leftEyeBottomArc)
+    return list(map(lambda x: rightEar < x or leftEar < x, EAR_THRESHOLD2))
 
 
 if __name__ == '__main__':

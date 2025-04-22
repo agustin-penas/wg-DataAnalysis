@@ -2,7 +2,8 @@ import numpy as np
 
 
 class BlinkDistance:
-    DISTANCE_THRESHOLD = [0.44, 0.46, 0.48, 0.49, 0.5, 0.51]
+    DISTANCE_THRESHOLD = [0.15, 0.25, 0.6, 0.75, 0.4, 0.42,
+                          0.45, 0.5, 0.52, 0.55, 0.44, 0.46, 0.48, 0.49, 0.51]
 
     LEFT_OPEN_EYE_DISTANCE = 0
     RIGHT_OPEN_EYE_DISTANCE = 0
