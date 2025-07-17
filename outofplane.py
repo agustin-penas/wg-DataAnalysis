@@ -1,5 +1,5 @@
 
-THRESHOLD = [0.15, 0.25, 0.4, 0.5, 0.6, 0.75, 0.8, 0.85]
+THRESHOLD = [0.15, 0.25, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85]
 
 
 def isOutOfPlane(importantKeypoints):
